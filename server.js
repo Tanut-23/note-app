@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser())
 const corsOptions = {
-  origin: ["http://localhost:5173", "https://rag-notes-frontend.vercel.app"], // your frontend domain
+  origin: ["http://localhost:5173", "https://note-app-frontend-eosin.vercel.app"], // your frontend domain
   credentials: true, // ✅ allow cookies to be sent
 };
 
