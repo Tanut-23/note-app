@@ -1,0 +1,27 @@
+
+
+### Get all notes
+GET http://localhost:3000/mongo/notes
+
+### Create a note
+POST http://localhost:3000/mongo/notes
+Content-Type: application/json
+
+{
+    "title": "Test note",
+    "content": "test create note first time",
+    "tags": ["notejs" , "express"],
+    "isPinned": false,
+    "userId": "6809c8a5780034281c5c1c47"
+}
+
+### Update a note
+PATCH http://localhost:3000/mongo/notes/680affc60d235d73edf719e0
+Content-Type: application/json
+
+{
+    "title" : "test first update"
+}
+
+### Delete a note
+DELETE http://localhost:3000/mongo/notes/680affc60d235d73edf719e0

@@ -1,0 +1,62 @@
+### Creat a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Tanut",
+    "email": "tanut123456@example.com"
+}
+
+### Read user
+
+GET http://localhost:3000/users
+Content-Type: application/json
+
+### Create new note (sql)
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+     "title" : "First Note",
+      "content" : "hello im try",
+      "tags": ["personal" , "test"],
+      "is_pinned": true,
+      "user_id": 2
+}
+
+### Create new note
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "title" : "Backend project",
+    "content" : "Backend mini project make me cry ;-;",
+    "tag" : "study"
+}
+### Create new note
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "title" : "Study backend",
+    "content" : "Today i'm learn about backend it too hard but i will try",
+    "tag" : "study"
+}
+### Create new note
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "title" : "Today i'm so happy",
+    "content" : "Backend mini project make me enjoy today",
+    "tag" : "life"
+}
+
+### Read all note
+GET http://localhost:3000/notes
+
+### Read filter tag
+GET http://localhost:3000/notes?tag=life
+
+### Read filter tag
+GET http://localhost:3000/notes?title=backend

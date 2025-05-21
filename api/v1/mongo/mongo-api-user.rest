@@ -1,0 +1,35 @@
+### Get all users
+GET http://localhost:3000/mongo/users
+
+### Get all users
+GET http://localhost:3000/mongo/users
+Content-Type: application/json
+
+{
+    "username": "tanutktr12356",
+    "password": "1234677",
+    "name": "Test person123",
+    "email": "test12@example.com11"
+}
+
+### Create a new user
+POST http://localhost:3000/may/users
+Content-Type: application/json
+
+{
+    "username": "tanutktr1212312335",
+    "password": "123467",
+    "name": "Test person",
+    "email": "test12123123@example.com"
+}
+
+### Update a user
+PATCH http://localhost:3000/mongo/users/680a33ea55d1738bd67d72a3
+Content-Type: application/json
+
+{
+    "name": "Tanutty Ketrueang"
+}
+
+### Delete a user
+DELETE http://localhost:3000/mongo/users/680a353eae6f0e1a9fe5d5c0
